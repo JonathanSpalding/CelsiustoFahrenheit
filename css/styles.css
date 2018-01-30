@@ -1,0 +1,35 @@
+body {
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.div-right {
+    width: 45%;
+    float: right;
+}
+.div-left {
+    width: 45%;
+    float: left;
+}
+
+.text-box-size {
+    width: 180px;
+    height: 23px
+}
+
+.text-box-size:hover {
+    border-color: blue;
+}
+
+/*This will style the buttons*/
+.buttonStyle {
+    height: 30px;
+    width: 30px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    }
+
+/*This should make them change their color when they are hovered*/
+.buttonStyle:hover {
+        border-color: blue;
+}
