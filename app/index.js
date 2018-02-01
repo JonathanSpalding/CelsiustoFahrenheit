@@ -3,9 +3,13 @@ function celsius(degree) {
     x = document.getElementById("c").value;
     if (isNaN(x)) {
         document.getElementById("error").innerHTML = "Warning! '" + x + "' Is not a number!";
-    } else
+        setTimeout(function(){ document.getElementById("error").innerHTML = ""; }, 5000);
+    } else {
         x = document.getElementById("c").value * 9 / 5 + 32;
-        document.getElementById("f").value = Math.round(x);   
+        document.getElementById("f").value = Math.round(x); 
+        document.getElementById("error").innerHTML = "";  
+    }
+        
 }
 
 function fahrenheit(degree) {
@@ -13,7 +17,10 @@ function fahrenheit(degree) {
     x = document.getElementById("f").value;
     if (isNaN(x)) {
         document.getElementById("error").innerHTML = "Warning! '" + x + "' Is not a number!";
-    } else
+        setTimeout(function(){ document.getElementById("error").innerHTML = ""; }, 5000);
+    } else {
     x = (document.getElementById("f").value -32) * 5 / 9;
     document.getElementById("c").value = Math.round(x);
+    document.getElementById("error").innerHTML = "";  
+    }
 }

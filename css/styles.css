@@ -18,18 +18,55 @@ body {
 }
 
 .text-box-size:hover {
-    border-color: blue;
+    border-color: rgb(204, 204, 255);
 }
 
 /*This will style the buttons*/
-.buttonStyle {
+.buttonLeftStyle {
     height: 30px;
     width: 30px;
     -moz-border-radius: 2px;
     -webkit-border-radius: 2px;
-    }
-
-/*This should make them change their color when they are hovered*/
-.buttonStyle:hover {
-        border-color: blue;
+    background: url("../img/002-next.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-box-shadow: 1px 1px 2px #ccc;
+        -moz-box-shadow: 1px 1px 2px #ccc;
+             box-shadow: 1px 1px 2px #ccc;
+    border-radius: 3px;
 }
+.buttonRightStyle {
+    height: 30px;
+    width: 30px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    background: url("../img/001-back.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-box-shadow: 1px 1px 2px #ccc;
+        -moz-box-shadow: 1px 1px 2px #ccc;
+             box-shadow: 1px 1px 2px #ccc;
+    border-radius: 3px;
+    
+}
+
+.buttonLeftStyle:hover {
+    border-color: rgb(139, 139, 252);
+    cursor: pointer;
+}
+.buttonRightStyle:hover {
+    border-color: rgb(139, 139, 252);
+    cursor: pointer;
+}
+.buttonRightStyle:focus {
+    outline: none;
+    -webkit-box-shadow: inset 0px 0px 4px #ccc;
+       -moz-box-shadow: inset 0px 0px 4px #ccc;
+            box-shadow: inset 0px 0px 4px #ccc;
+  }
+.buttonLeftStyle:focus {
+    outline: none;
+    -webkit-box-shadow: inset 0px 0px 4px #ccc;
+       -moz-box-shadow: inset 0px 0px 4px #ccc;
+            box-shadow: inset 0px 0px 4px #ccc;
+  }
